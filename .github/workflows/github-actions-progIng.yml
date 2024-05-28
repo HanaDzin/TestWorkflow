@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Testing Workflows
+
+on:
+  label:
+    types: 
+    - created
+  issues:  
+    types:
+    - opened
+jobs:
+  print:
+      - name: Print user event and date and time
+        run: 
+          echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor}}
