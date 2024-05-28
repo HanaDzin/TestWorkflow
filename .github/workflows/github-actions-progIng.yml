@@ -11,6 +11,5 @@ on:
     - opened
 jobs:
   print:
-      - name: Print user event and date and time
         run: 
           echo "Trigger - ${{ github.event_name }}, user - ${{ github.actor}}
